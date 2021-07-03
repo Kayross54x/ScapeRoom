@@ -1,0 +1,55 @@
+/**#tela {
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 0.5%;
+    background: white;
+    border-radius: 2px;
+    background: url("img/Fundo.png");
+}
+**/
+body{
+    background-color: #9E82D9;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: 80px;
+    margin: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: -0.5px 2px  #fffafa;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-side{
+    display: flex;
+    justify-content: space-between;
+}
+#menu-geral a img, button img{
+    width: 40px;
+}
+#menu-geral{
+    margin-right: 130px;
+}
+#start{
+    border: none;
+    background-color: white;
+    border: black 1px solid;
+    cursor: pointer;
+    height: 54px;
+}
+
+#counter {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 130px;
+}

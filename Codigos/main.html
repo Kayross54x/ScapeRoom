@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="estilo.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+		<link href="http://fonts.cdnfonts.com/css/windlass" rel="stylesheet">
+		<link rel="stylesheet" href="modal.css">
+		<link rel="stylesheet" href="obras.css">
+		<script src="sprite.js"></script>
+		<script src="movimenta.js"></script>
+		<script src="blocos.js"></script>
+		<script src="funcoes.js"></script>
+		<title>Escape Room</title>
+	</head>
+
+
+	<body>
+		<div class="top-side">
+			<div id="timer">
+				<p id='counter'>00:00</p>
+			</div>
+			<button onclick="start()" id="start"><img src="img/play.png" alt="icone-jogo"></button>
+			<div id="menu-geral">
+				<audio src="img/musica.wav"></audio>
+				<button id="play"><img id = "headphone"src="img/headphone.svg" alt="audio"></button>
+				<button onclick="action()" class="modal-btn">
+					<img src="img/duvida-escolar.png" alt="duvidas">
+				</button>
+
+			</div>
+
+		</div>
+
+		<div class="modal-bg">
+			<div class="modal">
+				<button onclick="start()" class="amigos" id="continue">Continuar</button>
+				<button class="amigos" id="option">Configurar</button>
+				<button class="amigos" id="quit">Desistir</button>
+			</div>
+			
+		</div>
+		
+		<div class="coiso">
+			<div class="obra1 obra2" id="obras"> 
+				<button onclick='sair()' class="inimigos" id="sair"><img src="img/X.png" alt="X"></button>
+			</div>
+
+		</div>
+
+
+																								
+
+
+
+
+
+
+
+
+		<main>
+			<canvas id="tela" width="1100" height="765.5"></canvas>
+		</main>
+		<script src="modal.js"></script>
+		<script src="home.js"></script>
+	</body>
+</html>
