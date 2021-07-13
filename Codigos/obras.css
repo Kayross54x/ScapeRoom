@@ -11,7 +11,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s opacity 0.5s;
+    transition: visibility 0s opacity 1s;
 }
 .coiso-active{
     visibility: visible;
@@ -19,13 +19,13 @@
 }
 
 .obra1{
-    width: 600px;
-    height: 485px;
+    width: 745px;
+    height: 570px;
     background-image: url(img/obra1.jpg);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    border: 5px solid sienna;
+    
 }
     
 #sair {
@@ -38,12 +38,95 @@
 }
 
 .obra2 {
-    width: 600px;
-    height: 485px;
+    width: 745px;
+    height: 570px;
     background-image: url(img/obra2.jpg);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    border: 5px solid sienna;
+    
+}
+
+.obra3 {
+    width: 745px;
+    height: 570px;
+    background-image: url(img/obra3.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.obra4 {
+    width: 745px;
+    height: 570px;
+    background-image: url(img/obra4.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.obra5 {
+    width: 745px;
+    height: 570px;
+    background-image: url(img/obra5.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.obra6 {
+    width: 745px;
+    height: 570px;
+    background-image: url(img/obra6.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.obra7 {
+    width: 745px;
+    height: 570px;
+    background-image: url(img/obra7.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.obra8 {
+    width: 745px;
+    height: 570px;
+    background-image: url(img/obra8.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.obra9 {
+    width: 745px;
+    height: 570px;
+    background-image: url(img/obra9.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.obra10 {
+    width: 745px;
+    height: 570px;
+    background-image: url(img/obra10.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.obra11 {
+    width: 745px;
+    height: 570px;
+    background-image: url(img/obra11.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
 }
 

@@ -11,7 +11,7 @@ function Sprite(img){
 	this.posX = this.posY = 0; //Posição no canvas onde a figura será exibida (Isso aqui vai mudando conforme eu vou alterando a posição do bonequinho)
 	this.width = 48; //A largura do meu sprite de personagem (o tamanho de um bonequinho só da minha img2[que contem as animacoes do meu personagem]). Isso aq é onde, de acordo com os valores de origem (srcx e srcy), o recorte vai parar.
 	this.height = 64; //A Altura do meu sprite de personagem (o tamanho de um bonequinho só da minha img2[que contem as animacoes do meu personagem]). Isso aq é onde, de acordo com os valores de origem (srcx e srcy), o recorte vai parar.
-	this.speed = 3; //Velocidade de deslocamento do personagem (3 pixels por segundo)
+	this.speed = 1.5; //Velocidade de deslocamento do personagem (3 pixels por segundo)
 	this.img = img;
 	this.countAnim = 0; //Contador que vai servir pra ir atualizando as animações
 
@@ -62,7 +62,7 @@ function Sprite(img){
 		}
 
 		//Limites da tela
-		this.posX = Math.max(135, Math.min((this.cnvWidth - 170) - this.width, this.posX));
+		this.posX = Math.max(127, Math.min((this.cnvWidth - 163) - this.width, this.posX));
 
 		//parede da sala com o banheiro (ta aqui por causa de um  bug)
 		if(this.posY >= 0 && this.posY <= 168 && this.posX >= 615 && this.posX < 620){
@@ -75,8 +75,8 @@ function Sprite(img){
 			this.posY = this.posY
 		}
 		//mesinha parte de cima (ta aqui por causa de um  bug)
-		if (this.posX > 0 && this.posX <= 210 && this.posY >= 330 && this.posY < 333){
-			this.posY = 329
+		if (this.posX > 0 && this.posX <= 185 && this.posY >= 360 && this.posY < 363){
+			this.posY = this.posY - 3
 			this.posX = this.posX
 		};
 
@@ -91,18 +91,60 @@ function Sprite(img){
 				this.posX = this.posX
 			};
 			//mesa parte de baixo
-			if (this.posX >= 280 && this.posX <= 515 && this.posY <= 300 && this.posY > 297){
+			if (this.posX >= 272 && this.posX <= 512 && this.posY <= 300 && this.posY > 297){
 				this.posY = this.posY + 3
 				this.posX = this.posX
-				//if (this.posX >= 300 && this.posX <= 500 && this.posY <= 299 && this.posY > 293){
-					//var coiso = document.querySelector('.coiso');
-					//coiso.classList.add('coiso-active');
-					//var obra2 = document.querySelector('#obras');
-					//obra2.classList.remove('obra1')
-				//}
+				if(this.posX >= 293 && this.posX <= 360 && this.posY <= 303 && this.posY > 297){
+					var coiso = document.querySelector('.coiso');
+					coiso.classList.add('coiso-active');
+					var obra5 = document.querySelector('#obras');
+					obra5.classList.remove('obra2')
+					obra5.classList.remove('obra1')
+					obra5.classList.remove('obra3')
+					obra5.classList.remove('obra4')
+					obra5.classList.remove('obra6')
+					obra5.classList.remove('obra7')
+					obra5.classList.remove('obra8')
+					obra5.classList.remove('obra9')
+					obra5.classList.remove('obra10')
+					obra5.classList.remove('obra11')
+					obra5.classList.add('obra5');
+				}
+				if(this.posX >= 363 && this.posX <= 424 && this.posY <= 303 && this.posY > 297){
+					var coiso = document.querySelector('.coiso');
+					coiso.classList.add('coiso-active');
+					var obra6 = document.querySelector('#obras');
+					obra6.classList.remove('obra2')
+					obra6.classList.remove('obra1')
+					obra6.classList.remove('obra3')
+					obra6.classList.remove('obra4')
+					obra6.classList.remove('obra5')
+					obra6.classList.remove('obra7')
+					obra6.classList.remove('obra8')
+					obra6.classList.remove('obra9')
+					obra6.classList.remove('obra10')
+					obra6.classList.remove('obra11')
+					obra6.classList.add('obra6');
+				}
+				if(this.posX >= 426 && this.posX <= 485 && this.posY <= 303 && this.posY > 297){
+					var coiso = document.querySelector('.coiso');
+					coiso.classList.add('coiso-active');
+					var obra7 = document.querySelector('#obras');
+					obra7.classList.remove('obra2')
+					obra7.classList.remove('obra1')
+					obra7.classList.remove('obra3')
+					obra7.classList.remove('obra4')
+					obra7.classList.remove('obra5')
+					obra7.classList.remove('obra6')
+					obra7.classList.remove('obra8')
+					obra7.classList.remove('obra9')
+					obra7.classList.remove('obra10')
+					obra7.classList.remove('obra11')
+					obra7.classList.add('obra7');
+				}
 			};
 			//mesa parte da esquerda
-			if (this.posY >= 50 && this.posY <= 285 && this.posX >= 272 && this.posX <= 275){
+			if (this.posY >= 50 && this.posY <= 300 && this.posX >= 272 && this.posX <= 275){
 				this.posX = this.posX - 3
 				this.posY = this.posY
 
@@ -111,26 +153,139 @@ function Sprite(img){
 					coiso.classList.add('coiso-active');
 					var obra1 = document.querySelector('#obras');
 					obra1.classList.remove('obra2')
-					obra1.classList.add('obra1')
+					obra1.classList.remove('obra3')
+					obra1.classList.remove('obra4')
+					obra1.classList.remove('obra5')
+					obra1.classList.remove('obra6')
+					obra1.classList.remove('obra7')
+					obra1.classList.remove('obra8')
+					obra1.classList.remove('obra9')
+					obra1.classList.remove('obra10')
+					obra1.classList.remove('obra11')
+					obra1.classList.add('obra1');
 				}
-				if (this.posY >= 180 && this.posY <= 240 && this.posX >= 269 && this.posX <= 275){
+				if (this.posY >= 111 && this.posY <= 171 && this.posX >= 269 && this.posX <= 275){
 					var coiso = document.querySelector('.coiso');
 					coiso.classList.add('coiso-active');
 					var obra2 = document.querySelector('#obras');
-					obra2.classList.remove('obra1');
-					obra2.classList.add('obra2')
+					obra2.classList.remove('obra1')
+					obra2.classList.remove('obra3')
+					obra2.classList.remove('obra4')
+					obra2.classList.remove('obra5')
+					obra2.classList.remove('obra6')
+					obra2.classList.remove('obra7')
+					obra2.classList.remove('obra8')
+					obra2.classList.remove('obra9')
+					obra2.classList.remove('obra10')
+					obra2.classList.remove('obra11')
+					obra2.classList.add('obra2');
+				}
+				if (this.posY >= 172 && this.posY <= 232 && this.posX >= 269 && this.posX <= 275){
+					var coiso = document.querySelector('.coiso');
+					coiso.classList.add('coiso-active');
+					var obra3 = document.querySelector('#obras');
+					obra3.classList.remove('obra1')
+					obra3.classList.remove('obra2')
+					obra3.classList.remove('obra4')
+					obra3.classList.remove('obra5')
+					obra3.classList.remove('obra6')
+					obra3.classList.remove('obra7')
+					obra3.classList.remove('obra8')
+					obra3.classList.remove('obra9')
+					obra3.classList.remove('obra10')
+					obra3.classList.remove('obra11')
+					obra3.classList.add('obra3');
+				}
+				if (this.posY >= 233 && this.posY <= 290 && this.posX >= 269 && this.posX <= 275){
+					var coiso = document.querySelector('.coiso');
+					coiso.classList.add('coiso-active');
+					var obra4 = document.querySelector('#obras');
+					obra4.classList.remove('obra1')
+					obra4.classList.remove('obra2')
+					obra4.classList.remove('obra3')
+					obra4.classList.remove('obra5')
+					obra4.classList.remove('obra6')
+					obra4.classList.remove('obra7')
+					obra4.classList.remove('obra8')
+					obra4.classList.remove('obra9')
+					obra4.classList.remove('obra10')
+					obra4.classList.remove('obra11')
+					obra4.classList.add('obra4');
 				}
 			};
 			//mesa parte da direita
-			if (this.posY >= 50 && this.posY <= 285 && this.posX <= 510 && this.posX >= 507){
+			if (this.posY >= 50 && this.posY <= 300 && this.posX <= 510 && this.posX >= 507){
 				this.posX = this.posX + 3
 				this.posY = this.posY
+				if (this.posY >= 50 && this.posY <= 110 && this.posX <= 513 && this.posX >= 506){
+					var coiso = document.querySelector('.coiso');
+					coiso.classList.add('coiso-active');
+					var obra11 = document.querySelector('#obras');
+					obra11.classList.remove('obra1')
+					obra11.classList.remove('obra2')
+					obra11.classList.remove('obra3')
+					obra11.classList.remove('obra4')
+					obra11.classList.remove('obra5')
+					obra11.classList.remove('obra6')
+					obra11.classList.remove('obra7')
+					obra11.classList.remove('obra8')
+					obra11.classList.remove('obra9')
+					obra11.classList.remove('obra10')
+					obra11.classList.add('obra11');
+				}
+				if (this.posY >= 111 && this.posY <= 171 && this.posX <= 513 && this.posX >= 506){
+					var coiso = document.querySelector('.coiso');
+					coiso.classList.add('coiso-active');
+					var obra10 = document.querySelector('#obras');
+					obra10.classList.remove('obra1')
+					obra10.classList.remove('obra2')
+					obra10.classList.remove('obra3')
+					obra10.classList.remove('obra4')
+					obra10.classList.remove('obra5')
+					obra10.classList.remove('obra6')
+					obra10.classList.remove('obra7')
+					obra10.classList.remove('obra8')
+					obra10.classList.remove('obra9')
+					obra10.classList.remove('obra11')
+					obra10.classList.add('obra10');
+				}
+				if (this.posY >= 172 && this.posY <= 232 && this.posX <= 513 && this.posX >= 506){
+					var coiso = document.querySelector('.coiso');
+					coiso.classList.add('coiso-active');
+					var obra9 = document.querySelector('#obras');
+					obra9.classList.remove('obra1')
+					obra9.classList.remove('obra2')
+					obra9.classList.remove('obra3')
+					obra9.classList.remove('obra4')
+					obra9.classList.remove('obra5')
+					obra9.classList.remove('obra6')
+					obra9.classList.remove('obra7')
+					obra9.classList.remove('obra8')
+					obra9.classList.remove('obra10')
+					obra9.classList.remove('obra11')
+					obra9.classList.add('obra9');
+				}
+				if (this.posY >= 233 && this.posY <= 293 && this.posX <= 513 && this.posX >= 506){
+					var coiso = document.querySelector('.coiso');
+					coiso.classList.add('coiso-active');
+					var obra8 = document.querySelector('#obras');
+					obra8.classList.remove('obra2')
+					obra8.classList.remove('obra1')
+					obra8.classList.remove('obra3')
+					obra8.classList.remove('obra4')
+					obra8.classList.remove('obra5')
+					obra8.classList.remove('obra6')
+					obra8.classList.remove('obra7')
+					obra8.classList.remove('obra9')
+					obra8.classList.remove('obra10')
+					obra8.classList.remove('obra11')
+					obra8.classList.add('obra8');
+				}
 			};
 			//mesinha da sala parte do lado
-			if (this.posX > 218 && this.posX <= 223 && this.posY <= 425 && this.posY > 333){
-				this.posX = 224
+			if (this.posX > 182 && this.posX <= 185 && this.posY <= 425 && this.posY > 360){
+				this.posX = this.posX + 3
 				this.posY = this.posY
-				
 			};
 			//parede da sala com o escritório.
 			if(this.posY >= 333 && this.posY <= 425 && this.posX >= 615 && this.posX < 620){
@@ -138,9 +293,9 @@ function Sprite(img){
 				this.posY = this.posY
 			}
 			//Parede da mesinha ate a porta da sala do pc
-			if(this.posX >= 218 && this.posX <= 326 && this.posY <= 426 && this.posY > 423){
+			if(this.posX >= 180 && this.posX <= 326 && this.posY <= 426 && this.posY > 423){
 				this.posX = this.posX
-				this.posY = 420
+				this.posY = this.posY - 3
 			}
 			//Parede da porta da sala do pc até a parede da direita
 			if(this.posX >= 430 && this.posX <= 616 && this.posY <= 426 && this.posY > 423){

@@ -3,5 +3,13 @@ function sair(){
     tag.classList.remove('coiso-active');
     tag.classList.remove('obra1')
     tag.classList.remove('obra2')
-    
+    tag.classList.remove('obra3')
+    tag.classList.remove('obra4')
+    tag.classList.remove('obra5')
+    tag.classList.remove('obra6')
+    tag.classList.remove('obra7')
+    tag.classList.remove('obra8')
+    tag.classList.remove('obra9')
+    tag.classList.remove('obra10')
+    tag.classList.remove('obra11')
 }
