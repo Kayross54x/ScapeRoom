@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/windlass" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Home/modal/modal.css" />
+    <link rel="stylesheet" href="../Home/modal/obras.css" />
+    <script src="../Home/Game/movimenta.js"></script>
+    <script src="../Home/Game/sprite.js"></script>
+    <script src="../Mission 1/funcoes.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Escape Room</title>
+  </head>
+  <script>
+    var espaco = 1;
+    var acerto = 0
+    var whatfrag = "";
+    var ms1passed = false;
+    var ms2passed = true;
+    var ms3passed = false;
+  </script>
+  <body>
+    <div class="top-side">
+      <div class="introducao">
+        <div class="imagemintroducao">
+          <img src="../../img/msg.png" alt="introdução" />
+          <button id="iniciar" onclick="jogo(espaco)">Começar</button>
+        </div>
+      </div>
+      <button class="start">
+        <img src="../../img/play.png" alt="icone-jogo" />
+      </button>
+      <div id="menu-geral">
+        <button onclick="action()" class="modal-btn">
+          <img src="../../img/duvida-escolar.png" alt="duvidas" />
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-bg">
+      <div class="modal">
+        <button class="amigos" id="continue">Continuar</button>
+        <button class="amigos" id="option">Configurar</button>
+        <button
+          onclick="document.location.reload(true);"
+          class="amigos"
+          id="quit"
+        >
+          Desistir
+        </button>
+      </div>
+    </div>
+
+    <div class="ModalObras">
+      <div
+        class="
+          obra1
+          obra2
+          obra3
+          obra4
+          obra5
+          obra6
+          obra7
+          obra8
+          obra9
+          obra10
+          obra11
+          obra12
+          obra13
+        "
+        id="obras"
+      >
+        <button onclick="sair()" class="inimigos" id="sair">
+          <img src="../../img/X.png" alt="X" />
+        </button>
+      </div>
+    </div>
+
+    <div class="formulario">
+      <form action="" id="formulario" class="flex-box">
+        <div id="espacinho1">
+          <label for="select-obra-1" class="campos flex-box">
+            <p id="pergunta0">.</p>
+            <select name="select-obra-1" id="obrinha1" class="selecao">
+              <option value="">...</option>
+              <option value="Obra 1">Obra 1</option>
+              <option value="Obra 2">Obra 2</option>
+              <option value="Obra 3">Obra 3</option>
+              <option value="Obra 4">Obra 4</option>
+              <option value="Obra 5">Obra 5</option>
+              <option value="Obra 6">Obra 6</option>
+              <option value="Obra 7">Obra 7</option>
+              <option value="Obra 8">Obra 8</option>
+              <option value="Obra 9">Obra 9</option>
+              <option value="Obra 10">Obra 10</option>
+            </select>
+          </label>
+          <label for="select-obra-4" class="campos flex-box">
+            <p id="pergunta1">.</p>
+            <select name="select-obra-4" id="obrinha2" class="selecao">
+              <option value="">...</option>
+              <option value="Obra 1">Obra 1</option>
+              <option value="Obra 2">Obra 2</option>
+              <option value="Obra 3">Obra 3</option>
+              <option value="Obra 4">Obra 4</option>
+              <option value="Obra 5">Obra 5</option>
+              <option value="Obra 6">Obra 6</option>
+              <option value="Obra 7">Obra 7</option>
+              <option value="Obra 8">Obra 8</option>
+              <option value="Obra 9">Obra 9</option>
+              <option value="Obra 10">Obra 10</option>
+            </select>
+          </label>
+          <label for="select-obra-8" class="campos flex-box">
+            <p id="pergunta2">.</p>
+            <select name="select-obra-8" id="obrinha3" class="selecao">
+              <option value="">...</option>
+              <option value="Obra 1">Obra 1</option>
+              <option value="Obra 2">Obra 2</option>
+              <option value="Obra 3">Obra 3</option>
+              <option value="Obra 4">Obra 4</option>
+              <option value="Obra 5">Obra 5</option>
+              <option value="Obra 6">Obra 6</option>
+              <option value="Obra 7">Obra 7</option>
+              <option value="Obra 8">Obra 8</option>
+              <option value="Obra 9">Obra 9</option>
+              <option value="Obra 10">Obra 10</option>
+            </select>
+          </label>
+          <label for="select-obra-9" class="campos flex-box">
+            <p id="pergunta3">.</p>
+            <select name="select-obra-9" id="obrinha4" class="selecao">
+              <option value="">...</option>
+              <option value="Obra 1">Obra 1</option>
+              <option value="Obra 2">Obra 2</option>
+              <option value="Obra 3">Obra 3</option>
+              <option value="Obra 4">Obra 4</option>
+              <option value="Obra 5">Obra 5</option>
+              <option value="Obra 6">Obra 6</option>
+              <option value="Obra 7">Obra 7</option>
+              <option value="Obra 8">Obra 8</option>
+              <option value="Obra 9">Obra 9</option>
+              <option value="Obra 10">Obra 10</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="divdosubmeter">
+          <button type="button" onclick="conferir(espaco)" id="submeter">
+            Submeter
+          </button>
+        </div>
+      </form>
+      <button onclick="sair2()" class="inimigos" id="sair">
+        <img src="../../img/X.png" alt="X" />
+      </button>
+    </div>
+
+    <div class="modalFrag">
+      <div class="frag1 frag2 frag3 frag4 frag5 frag6 frag7 frag8" id="frags">
+        <div class="box">
+          <p>Essa imagem é referente a ditadura nazista?</p>
+          <div class="boxResposta">
+            <input type="radio" name="resposta" id="verdadeiro" value="verdadeiro" />
+            <label for="sim">Sim</label><br />
+
+            <input type="radio" name="resposta" id="falso" value="falso" />
+            <label for="nao">Não</label><br />
+          </div>
+          <div id="checkzinho">
+            <button type="button" onclick="checkboxes()" id="enviar">Enviar</button>
+          </div>
+        </div>
+        <button onclick="sair3()" class="inimigos" id="sair">
+          <img src="../../img/X.png" alt="X" />
+
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <canvas id="tela" width="1100" height="765.5"></canvas>
+    </main>
+    <script src="../Home/modal/modal.js"></script>
+    <script src="../Mission 1/perguntas.js"></script>
+    <script src="../Mission 2/verifica.js"></script>
+  </body>
+</html>

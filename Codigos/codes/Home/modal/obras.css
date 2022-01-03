@@ -1,0 +1,322 @@
+.ModalObras {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 1s;
+}
+.ModalObras-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.obra1 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/obra1.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#sair {
+  text-decoration: none;
+  border: none;
+  height: 40px;
+  background: none;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.obra2 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/obra2.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.obra3 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/obra3.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.obra4 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/obra4.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.obra5 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/obra5.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.obra6 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/obra6.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.obra7 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/obra7.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.obra8 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/obra8.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.obra9 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/obra9.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.obra10 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/obra10.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.obra11 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/obra11.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.formulario {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 1s;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: bolder;
+  font-size: medium;
+  text-align: center;
+}
+.formulario-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.formulario form {
+  background: whitesmoke;
+  width: 160vh;
+  height: 95vh;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.formulario form p {
+  max-width: 75%;
+  height: auto;
+  text-align: justify;
+  margin: 0px;
+  font-size: 18px;
+}
+.flex-box {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+.formulario select {
+  margin-left: 10px;
+  text-align: justify;
+  height: 2em;
+  width: 250px;
+  font-size: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.campos {
+  margin: 10px;
+}
+#espacinho1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  visibility: visible;
+  position: relative;
+}
+#divdosubmeter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#divdosubmeter button {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 15px;
+  border-radius: 180px;
+  border: 1px solid black;
+  width: 350px;
+  height: 45px;
+  background-color: white;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+#divdosubmeter button:hover {
+  background-color: whitesmoke;
+  transition: 0.5s;
+}
+
+.modalFrag {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 1s;
+}
+
+.modalFrag-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.frag1 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/imgCerta1.jpeg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.frag2 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/imgCerta2.jpeg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.frag3 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/imgCerta3.jpeg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.frag4 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/imgCerta4.jpeg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.frag5 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/imgErrada1.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.frag6 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/imgErrada2.jpeg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.frag7 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/imgErrada3.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.frag8 {
+  width: 745px;
+  height: 570px;
+  background-image: url(../../../img/imgErrada4.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#checkzinho button {
+  color: red;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 15px;
+  border-radius: 180px;
+  border: 1px solid black;
+  width: 80px;
+  height: 25px;
+  background-color: white;
+  margin-top: 15px;
+}
+#checkzinho  button:hover {
+  background-color: whitesmoke;
+  transition: 0.5s;
+}
+.box {
+  padding-top: 30%;
+  width: 200px;
+  text-align:left;
+  display: block;
+  align-items: center;
+  font-size: 15px;
+  color: red;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.boxResposta{
+  text-align:left;
+  display: flex;
+  align-items: center;
+
+}

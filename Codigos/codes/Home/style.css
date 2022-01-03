@@ -1,0 +1,42 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  background-image: url(../../img/back.png);
+  background: cover no-repeat;
+  margin: 0;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 80px;
+  margin: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-shadow: -0.5px 2px #fffafa;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-side {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 45%;
+  padding-right: 45%;
+}
+
+#menu-geral a img,
+button img {
+  width: 40px;
+}
+
+#menu-geral {
+  margin-right: 130px;
+}
+
